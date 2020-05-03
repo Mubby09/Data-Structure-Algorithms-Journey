@@ -7,12 +7,9 @@
 // Example:
 
 function bubbleSort(arr) {
-  const loop = arr.length;
-
-  //loop for loop length
-  for (let i = 0; i < loop; i++) {
+  for (let i = 0; i < arr.length; i++) {
     //cycle through the array items
-    for (let j = 0; j < loop; j++) {
+    for (let j = 0; j < arr.length; j++) {
       //compare adjacent items
       if (arr[j] > arr[j + 1]) {
         let temp = arr[j];
