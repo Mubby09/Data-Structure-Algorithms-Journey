@@ -1,8 +1,8 @@
 // Bubble Sort is an algorithm basically where we have to compare two numbers at a time and then Swap them if they are out of Order.
 // i.e In ascending order.
-// It works by comparing two adjacent numbers net to each other and then swapping their places if the smaller index's value
+// It works by comparing two adjacent numbers next to each other and then swapping their places if the smaller index's value
 // is larger than the larger Index's value.
-// And the contines looping through until all values are in order from the smallest to the larger value.
+// And the continues looping through until all values are in order from the smallest to the larger value.
 
 // Example:
 
