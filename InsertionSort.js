@@ -1,10 +1,10 @@
 // Insertion Sort is really great for arrays that you are sure are already sorted or close to sorted.
 // Insertion Sort is a step more complex but a bit more useful than bubble sort and is occasionally useful.
-// The worst case scenerio to is is similar to bubble sort's but its best case make it suited for times when you are sure a listed or likely to be sorted.
-// The idea is that the beginning of yoyr list/array is sorted and that everything else is assumed to be unsorted
+// The worst case scenerio to is similar to bubble sort's but its best case make it suited for times when you are sure a listed or likely to be sorted.
+// The idea is that the beginning of your list/array is sorted and that everything else is assumed to be unsorted
 // An example of that is this:
-// const arr =n [10,4,2,6,3,8,1,9];
-// Here in the example above, it is assumed that index 0 which is 10 is already sorted and you the only assumed that the remaining elements starting from index 1 which is 4 is unsorted.
+// const arr =[10,4,2,6,3,8,1,9];
+// Here in the example above, it is assumed that index 0 which is 10 is already sorted and you only assumed that the remaining elements starting from index 1 which is 4 is unsorted.
 // The outer loop goes over the whole list, the index of which signifies where the 'sorted' part of the list is.
 // The inner loop goes over the sorted part of the list and inserts it into the correct position in the array.
 
