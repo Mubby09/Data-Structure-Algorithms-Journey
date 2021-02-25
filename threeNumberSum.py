@@ -16,7 +16,7 @@ def threeNumberSum(array, target):
                 left_pointer += 1
             if currentSum > target:
                 right_pointer -= 1
-    return print(triplets)
+    return triplets
 
 
 threeNumberSum([-8, 6, 1, 2, 3, 5, 6, 12], 0)
