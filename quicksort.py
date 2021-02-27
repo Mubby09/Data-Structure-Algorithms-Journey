@@ -1,3 +1,4 @@
+# Pivot is given as a paramter
 def quick_sort(pivot, array):
     pivot = array[pivot]
     start = 0
