@@ -12,4 +12,13 @@ def isStringAPalindrome(s):
     return print('False')
 
 
-isStringAPalindrome('race: car')
+isStringAPalindrome('racecar')
+
+
+# ////////////////////////////////////////////////////////////////////////////////
+
+def isStringAPalindrome(s):
+    print(all(s[i] == s[~i] for i in range(len(s) // 2)))
+
+
+isStringAPalindrome('madam')
