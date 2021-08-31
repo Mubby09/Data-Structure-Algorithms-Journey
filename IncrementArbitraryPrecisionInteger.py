@@ -1,6 +1,7 @@
 def plus_one(array):
     array[-1] += 1
     for i in reversed(range(1, len(array))):
+        print(i)
         if array[i] != 10:
             break
         array[i] = 0
