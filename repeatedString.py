@@ -15,4 +15,4 @@ def repeatedString(string, number):
     return print(numOfTheLetter)
 
 
-repeatedString('ababababababababababababababababa', 15)
+repeatedString('abababababababababababababababababa', 15)
