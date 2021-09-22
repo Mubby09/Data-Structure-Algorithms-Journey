@@ -12,4 +12,4 @@ def quickSort(array):
         return quickSort(lesserThanPivot) + [pivot] + quickSort(greaterThanPivot)
 
 
-quickSort([2, 6, 7, 1, 1, 0, 8, 6, 3, 2, 8, 5, 4])
+print(quickSort([2, 6, 7, 1, 1, 0, 8, 6, 3, 2, 8, 5, 4]))
