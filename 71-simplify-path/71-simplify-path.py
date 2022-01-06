@@ -6,7 +6,8 @@ class Solution:
         for i in path + '/':
             if i == '/':
                 if current_path == '..':
-                    if stack: stack.pop()
+                    if stack != []:
+                        stack.pop()
                 elif current_path != '' and current_path != '.':
                     stack.append(current_path)
                 current_path = ''
