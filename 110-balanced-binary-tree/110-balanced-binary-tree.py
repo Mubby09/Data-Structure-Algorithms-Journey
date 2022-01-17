@@ -10,6 +10,7 @@ class Solution:
         
         def check_balanced(root):
             if not root:
+                #An empty tree is a balanced tree.
                 return BalancedStatusWithHeight(balanced= True, height = -1)
          
             leftChild_check = check_balanced(root.left)
@@ -21,7 +22,7 @@ class Solution:
                 return rightChild_check
             
             # a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
-            isBalanced = abs(leftChild_check.height - rightChild_check.height) <= 1
+            isBalanced = abs(leftChild_check.height - rightChild_check.height) <= 1 #returns a truthy value
             height = max(leftChild_check.height, rightChild_check.height) + 1
         
             return BalancedStatusWithHeight(isBalanced, height)
