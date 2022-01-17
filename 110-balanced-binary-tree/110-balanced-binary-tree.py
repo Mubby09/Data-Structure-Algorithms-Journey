@@ -28,7 +28,7 @@ class Solution:
             #standard formula to find the max height of a subtree
         
             return BalancedStatusWithHeight(isBalanced, height)
-    
+        #RECURSION checks if the current stack returns true of false.
         return check_balanced(root).balanced
             
         
