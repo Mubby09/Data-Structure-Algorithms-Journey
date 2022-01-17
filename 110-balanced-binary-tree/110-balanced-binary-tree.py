@@ -15,10 +15,12 @@ class Solution:
                 return BalancedStatusWithHeight(balanced= True, height = -1)
          
             leftChild_check = check_balanced(root.left)
+            #if left child is not balanced, return the left child
             if not leftChild_check.balanced:
                 return leftChild_check
             
             rightChild_check = check_balanced(root.right)
+            #if right child is not balanced, return the right child
             if not rightChild_check.balanced:
                 return rightChild_check
             
