@@ -9,6 +9,7 @@ class Solution:
         BalancedStatusWithHeight = collections.namedtuple('BalancedStatusWithHeight', ('balanced', 'height'))
         
         def check_balanced(root):
+            # i.e If there is no tree at all
             if not root:
                 #An empty tree is a balanced tree.
                 return BalancedStatusWithHeight(balanced= True, height = -1)
