@@ -24,7 +24,8 @@ class Solution:
             
             # a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
             isBalanced = abs(leftChild_check.height - rightChild_check.height) <= 1 #returns a truthy value
-            height = max(leftChild_check.height, rightChild_check.height) + 1
+            height = max(leftChild_check.height, rightChild_check.height) + 1 #Adding 1 to the max of the left and right child is 
+            #standard formula to find the max height of a subtree
         
             return BalancedStatusWithHeight(isBalanced, height)
     
