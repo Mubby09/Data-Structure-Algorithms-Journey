@@ -24,11 +24,11 @@ class Solution:
             if not rightChild_check.balanced:
                 return rightChild_check
             
-            # a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+            #returns a truthy value
+            #Adding 1 to the max of the left and right child is standard formula to find the max height of a subtree
             height = max(leftChild_check.height, rightChild_check.height) + 1
-            isBalanced = abs(leftChild_check.height - rightChild_check.height) <= 1 #returns a truthy value
-             #Adding 1 to the max of the left and right child is 
-            #standard formula to find the max height of a subtree
+              # a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+            isBalanced = abs(leftChild_check.height - rightChild_check.height) <= 1
         
             return BalancedStatusWithHeight(isBalanced, height)
         #RECURSION checks if the current stack returns true of false.
