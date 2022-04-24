@@ -15,6 +15,6 @@ class Solution:
         for k, v in d.items():
             if v % 2 != 0 and odd_count == 0:
                 odd_count +=1
-            elif v % 2 != 0 and odd_count != 0:
+            elif v % 2 != 0 and odd_count != range(0, 2):
                 return False
         return True
