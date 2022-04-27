@@ -1,13 +1,13 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        charCountInR = Counter(ransomNote)
-#         charCountInR = {}
+        # charCountInR = Counter(ransomNote)
+        charCountInR = {}
         
-#         for i in ransomNote:
-#             if i in charCountInR:
-#                 charCountInR[i] += 1
-#             else:
-#                 charCountInR[i] = 1
+        for i in ransomNote:
+            if i in charCountInR:
+                charCountInR[i] += 1
+            else:
+                charCountInR[i] = 1
                 
         
         for c in magazine:
